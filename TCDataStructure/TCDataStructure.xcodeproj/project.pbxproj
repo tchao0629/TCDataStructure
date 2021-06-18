@@ -14,6 +14,7 @@
 		2025B54C267C32D000B3AE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2025B54B267C32D000B3AE72 /* Assets.xcassets */; };
 		2025B54F267C32D000B3AE72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2025B54D267C32D000B3AE72 /* LaunchScreen.storyboard */; };
 		2025B552267C32D000B3AE72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B551267C32D000B3AE72 /* main.m */; };
+		2025B55C267C340300B3AE72 /* TCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B55B267C340300B3AE72 /* TCStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		2025B54E267C32D000B3AE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2025B550267C32D000B3AE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2025B551267C32D000B3AE72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2025B55A267C340300B3AE72 /* TCStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCStack.h; sourceTree = "<group>"; };
+		2025B55B267C340300B3AE72 /* TCStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCStack.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 		2025B559267C335100B3AE72 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				2025B55A267C340300B3AE72 /* TCStack.h */,
+				2025B55B267C340300B3AE72 /* TCStack.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2025B547267C32CD00B3AE72 /* ViewController.m in Sources */,
+				2025B55C267C340300B3AE72 /* TCStack.m in Sources */,
 				2025B541267C32CD00B3AE72 /* AppDelegate.m in Sources */,
 				2025B552267C32D000B3AE72 /* main.m in Sources */,
 				2025B544267C32CD00B3AE72 /* SceneDelegate.m in Sources */,
