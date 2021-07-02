@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TCDataStructure"
-  spec.version      = "1.0.2"
+  spec.version      = "1.0.3"
   spec.summary      = "数据结构"
 
   # This description is used to generate tags and improve search results.
@@ -90,7 +90,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "TCDataStructure", "TCDataStructure/Main/Class/**/*.{h,m}"
+  spec.source_files  = "TCDataStructure/TCDataStructure/Main/Class/**/*.{h,m}"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
