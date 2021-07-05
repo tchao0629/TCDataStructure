@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "TCSingleLinkedList.h"
+#import "TCLinkedList.h"
 
 @interface ViewController ()
 
@@ -18,7 +19,45 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self singleLinkTest];
+//    [self singleLinkTest];
+    [self test];
+}
+- (void)test {
+    TCLinkedList *list = [[TCLinkedList alloc] init];
+    NSLog(@"isEmpty: %d", list.isEmpty);
+    NSLog(@"@(1) index : %d", [list indexOf:@(1)]);
+    NSLog(@"contains @(1) : %d", [list contains:@(1)]);
+    [list removeElement:@(1)];
+    
+    /// add
+    [list addElement:@(2)];
+    [list addElement:@(3)];
+    [list addElement:@(5)];
+    //    NSLog(@"@(1) index : %d", [list indexOf:@(1)]);
+    //    NSLog(@"contains @(1) : %d", [list contains:@(1)]);
+    //    NSLog(@"@(2) index : %d", [list indexOf:@(2)]);
+    //    NSLog(@"contains @(2) : %d", [list contains:@(2)]);
+    NSLog(@"@(3) index : %d", [list indexOf:@(3)]);
+    NSLog(@"contains @(3) : %d", [list contains:@(3)]);
+    NSLog(@"@\"2\" index : %d", [list indexOf:@"2"]);
+    NSLog(@"contains @\"2\" : %d", [list contains:@"2"]);
+    [list addElement:@(100) forIndex:0];
+    [list removeElementForIndex:0];
+    
+    /// remove
+    //    [list removeElement:@(3)];
+    //    [list removeElementForIndex:list.size-1];
+    //    [list removeElementForIndex:list.size];
+    
+    NSLog(@"set [0] %@", [list setElement:@(100) forIndex:0]);
+    NSLog(@"get [0] %@", [list getElementForIndex:0]);
+    
+    NSLog(@"isEmpty: %d", list.isEmpty);
+    NSLog(@"%@", list);
+    
+    [list clear];
+    NSLog(@"isEmpty: %d", list.isEmpty);
+    NSLog(@"%@", list);
 }
 
 - (void)singleLinkTest {
