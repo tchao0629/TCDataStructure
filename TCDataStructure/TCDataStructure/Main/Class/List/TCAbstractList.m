@@ -65,5 +65,23 @@ int const  ELEMENT_NOT_FOUND = -1;
     return ELEMENT_NOT_FOUND;
 }
 
+#pragma mark - Protected Methods
+- (BOOL)checkIndex:(int)index {
+    if (index < 0 || index >= _size) {
+        [self outOfBounds:index];
+        return NO;
+    }
+    return YES;
+}
+- (BOOL)checkIndexForAdd:(int)index {
+    if (index < 0 || index > _size) {
+        [self outOfBounds:index];
+        return NO;
+    }
+    return YES;
+}
+- (void)outOfBounds:(int)index {
+    NSAssert(NO, @"index:%d, size:%d", index, _size);
+}
 
 @end
