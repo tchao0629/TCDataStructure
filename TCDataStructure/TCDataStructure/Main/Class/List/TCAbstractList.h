@@ -90,6 +90,8 @@ extern int const  ELEMENT_NOT_FOUND;
 - (BOOL)checkIndexForAdd:(int)index;
 /// tip: index越界
 - (void)outOfBounds:(int)index;
+/// 检测元素不为nil
+- (BOOL)checkElementNotNull:(TCElement)element;
 
 @end
 

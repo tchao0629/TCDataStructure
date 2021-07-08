@@ -83,5 +83,10 @@ int const  ELEMENT_NOT_FOUND = -1;
 - (void)outOfBounds:(int)index {
     NSAssert(NO, @"index:%d, size:%d", index, _size);
 }
+- (BOOL)checkElementNotNull:(id)element {
+    if (element) return YES;
+    NSAssert(NO, @"element is nil.");
+    return NO;
+}
 
 @end

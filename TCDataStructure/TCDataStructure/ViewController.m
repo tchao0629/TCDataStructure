@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TCSingleLinkedList.h"
 #import "TCLinkedList.h"
+#import "TCCircleLinkedList.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,7 @@
     [self test];
 }
 - (void)test {
-    TCLinkedList *list = [[TCLinkedList alloc] init];
+    TCCircleLinkedList *list = [[TCCircleLinkedList alloc] init];
     NSLog(@"isEmpty: %d", list.isEmpty);
     NSLog(@"@(1) index : %d", [list indexOf:@(1)]);
     NSLog(@"contains @(1) : %d", [list contains:@(1)]);
@@ -45,9 +46,9 @@
     [list removeElementForIndex:0];
     
     /// remove
-    //    [list removeElement:@(3)];
-    //    [list removeElementForIndex:list.size-1];
-    //    [list removeElementForIndex:list.size];
+//        [list removeElement:@(3)];
+//        [list removeElementForIndex:list.size-1];
+//        [list removeElementForIndex:list.size];
     
     NSLog(@"set [0] %@", [list setElement:@(100) forIndex:0]);
     NSLog(@"get [0] %@", [list getElementForIndex:0]);
