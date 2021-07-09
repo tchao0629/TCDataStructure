@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
-/** 栈 FILO (first int last out)*/
-@interface TCStack<TCElement> : NSObject {
-    /** 元素的数量 */
-    NSUInteger _size;
-}
+/** 栈 FILO (first int last out) [入栈 出栈] */
+@interface TCStack<TCElement> : NSObject
 
-/** 是否为空 */
+/// 元素的数量
+@property (nonatomic, assign, readonly) int size;
+
+/// 是否为空
 - (BOOL)isEmpty;
 
 /** 入栈 */
@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 获取栈顶元素 */
 - (TCElement)top;
 
-/** 清空栈内元素 */
+/// 清空栈
 - (void)clear;
 
 @end

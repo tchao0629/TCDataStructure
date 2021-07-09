@@ -10,6 +10,7 @@
 #import "TCSingleLinkedList.h"
 #import "TCLinkedList.h"
 #import "TCCircleLinkedList.h"
+#import "TCStack.h"
 
 @interface ViewController ()
 
@@ -21,8 +22,37 @@
     [super viewDidLoad];
     
 //    [self singleLinkTest];
-    [self test];
+//    [self test];
+    [self stackTest];
 }
+- (void)stackTest {
+    TCStack *stack = [[TCStack alloc] init];
+    NSLog(@"isEmpty : %d", [stack isEmpty]);
+    NSLog(@"size = %d", stack.size);
+    NSLog(@"top : %@", [stack top]);
+    
+    /// push
+    NSLog(@"pop : %@", [stack pop]);
+    [stack push:@(2)];
+    NSLog(@"top : %@", [stack top]);
+    NSLog(@"pop : %@", [stack pop]);
+    [stack push:@(3)];
+    [stack push:@(5)];
+    NSLog(@"top : %@", [stack top]);
+    NSLog(@"pop : %@", [stack pop]);
+    [stack push:@"123"];
+    
+    NSLog(@"isEmpty : %d", [stack isEmpty]);
+    NSLog(@"size = %d", stack.size);
+    NSLog(@"%@", stack);
+    
+    [stack clear];
+    
+    NSLog(@"isEmpty : %d", [stack isEmpty]);
+    NSLog(@"size = %d", stack.size);
+    NSLog(@"%@", stack);
+}
+
 - (void)test {
     TCCircleLinkedList *list = [[TCCircleLinkedList alloc] init];
     NSLog(@"isEmpty: %d", list.isEmpty);

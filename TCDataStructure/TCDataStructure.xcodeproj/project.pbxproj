@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		200756802697D7FF002F22E7 /* TCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007567F2697D7FF002F22E7 /* TCStack.m */; };
 		201AE1DF268EB75A007B0A0F /* TCAbstractList.m in Sources */ = {isa = PBXBuildFile; fileRef = 201AE1DE268EB75A007B0A0F /* TCAbstractList.m */; };
 		201AE1E2268EB892007B0A0F /* TCSingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 201AE1E1268EB892007B0A0F /* TCSingleLinkedList.m */; };
 		2025B541267C32CD00B3AE72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B540267C32CD00B3AE72 /* AppDelegate.m */; };
@@ -16,13 +17,14 @@
 		2025B54C267C32D000B3AE72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2025B54B267C32D000B3AE72 /* Assets.xcassets */; };
 		2025B54F267C32D000B3AE72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2025B54D267C32D000B3AE72 /* LaunchScreen.storyboard */; };
 		2025B552267C32D000B3AE72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B551267C32D000B3AE72 /* main.m */; };
-		2025B55C267C340300B3AE72 /* TCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B55B267C340300B3AE72 /* TCStack.m */; };
 		2034A0D326929D5C0058CB6E /* TCLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2034A0D226929D5C0058CB6E /* TCLinkedList.m */; };
 		2034A0E32693E50F0058CB6E /* TCSingleCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2034A0E12693E50F0058CB6E /* TCSingleCircleLinkedList.m */; };
 		206263222696F59C0057B8E5 /* TCCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 206263212696F59C0057B8E5 /* TCCircleLinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2007567E2697D7FF002F22E7 /* TCStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStack.h; sourceTree = "<group>"; };
+		2007567F2697D7FF002F22E7 /* TCStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStack.m; sourceTree = "<group>"; };
 		201AE1DD268EB75A007B0A0F /* TCAbstractList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAbstractList.h; sourceTree = "<group>"; };
 		201AE1DE268EB75A007B0A0F /* TCAbstractList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAbstractList.m; sourceTree = "<group>"; };
 		201AE1E0268EB892007B0A0F /* TCSingleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSingleLinkedList.h; sourceTree = "<group>"; };
@@ -39,8 +41,6 @@
 		2025B54E267C32D000B3AE72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2025B550267C32D000B3AE72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2025B551267C32D000B3AE72 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2025B55A267C340300B3AE72 /* TCStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCStack.h; sourceTree = "<group>"; };
-		2025B55B267C340300B3AE72 /* TCStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCStack.m; sourceTree = "<group>"; };
 		2034A0D126929D5C0058CB6E /* TCLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCLinkedList.h; sourceTree = "<group>"; };
 		2034A0D226929D5C0058CB6E /* TCLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLinkedList.m; sourceTree = "<group>"; };
 		2034A0E12693E50F0058CB6E /* TCSingleCircleLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSingleCircleLinkedList.m; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		201AE1DC268EB730007B0A0F /* List */ = {
 			isa = PBXGroup;
 			children = (
+				2007567E2697D7FF002F22E7 /* TCStack.h */,
+				2007567F2697D7FF002F22E7 /* TCStack.m */,
 				2034A0D126929D5C0058CB6E /* TCLinkedList.h */,
 				2034A0D226929D5C0058CB6E /* TCLinkedList.m */,
 				201AE1DD268EB75A007B0A0F /* TCAbstractList.h */,
@@ -124,8 +126,6 @@
 			isa = PBXGroup;
 			children = (
 				201AE1DC268EB730007B0A0F /* List */,
-				2025B55A267C340300B3AE72 /* TCStack.h */,
-				2025B55B267C340300B3AE72 /* TCStack.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2025B547267C32CD00B3AE72 /* ViewController.m in Sources */,
-				2025B55C267C340300B3AE72 /* TCStack.m in Sources */,
+				200756802697D7FF002F22E7 /* TCStack.m in Sources */,
 				2034A0E32693E50F0058CB6E /* TCSingleCircleLinkedList.m in Sources */,
 				201AE1DF268EB75A007B0A0F /* TCAbstractList.m in Sources */,
 				2034A0D326929D5C0058CB6E /* TCLinkedList.m in Sources */,
