@@ -11,6 +11,7 @@
 #import "TCLinkedList.h"
 #import "TCCircleLinkedList.h"
 #import "TCStack.h"
+#import "TCQueue.h"
 
 @interface ViewController ()
 
@@ -23,7 +24,39 @@
     
 //    [self singleLinkTest];
 //    [self test];
-    [self stackTest];
+//    [self stackTest];
+    [self queueTest];
+}
+- (void)queueTest {
+    TCQueue *queue = [[TCQueue alloc] init];
+    NSLog(@"size : %d", queue.size);
+    NSLog(@"isEmpty : %d", [queue isEmpty]);
+    NSLog(@"front: %@", [queue front]);
+    NSLog(@"dequeue: %@", [queue deQueue]);
+    
+    [queue enQueue:@(2)];
+    NSLog(@"size : %d", queue.size);
+    NSLog(@"isEmpty : %d", [queue isEmpty]);
+    NSLog(@"front: %@", [queue front]);
+    //    NSLog(@"dequeue: %@", [queue deQueue]);
+    
+    [queue enQueue:@(3)];
+    [queue enQueue:@(5)];
+    NSLog(@"size : %d", queue.size);
+    NSLog(@"isEmpty : %d", [queue isEmpty]);
+    NSLog(@"front: %@", [queue front]);
+    NSLog(@"dequeue: %@", [queue deQueue]);
+    
+    NSLog(@"%@", queue);
+    
+    [queue clear];
+    NSLog(@"size : %d", queue.size);
+    NSLog(@"isEmpty : %d", [queue isEmpty]);
+    NSLog(@"front: %@", [queue front]);
+    NSLog(@"dequeue: %@", [queue deQueue]);
+    
+    NSLog(@"%@", queue);
+    
 }
 - (void)stackTest {
     TCStack *stack = [[TCStack alloc] init];
