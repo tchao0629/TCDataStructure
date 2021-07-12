@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		200756802697D7FF002F22E7 /* TCStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 2007567F2697D7FF002F22E7 /* TCStack.m */; };
+		2012AED9269BCFF900D464A8 /* TCDeque.m in Sources */ = {isa = PBXBuildFile; fileRef = 2012AED8269BCFF900D464A8 /* TCDeque.m */; };
 		201AE1DF268EB75A007B0A0F /* TCAbstractList.m in Sources */ = {isa = PBXBuildFile; fileRef = 201AE1DE268EB75A007B0A0F /* TCAbstractList.m */; };
 		201AE1E2268EB892007B0A0F /* TCSingleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 201AE1E1268EB892007B0A0F /* TCSingleLinkedList.m */; };
 		2025B541267C32CD00B3AE72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B540267C32CD00B3AE72 /* AppDelegate.m */; };
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		2007567E2697D7FF002F22E7 /* TCStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCStack.h; sourceTree = "<group>"; };
 		2007567F2697D7FF002F22E7 /* TCStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCStack.m; sourceTree = "<group>"; };
+		2012AED7269BCFF900D464A8 /* TCDeque.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCDeque.h; sourceTree = "<group>"; };
+		2012AED8269BCFF900D464A8 /* TCDeque.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCDeque.m; sourceTree = "<group>"; };
 		201AE1DD268EB75A007B0A0F /* TCAbstractList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAbstractList.h; sourceTree = "<group>"; };
 		201AE1DE268EB75A007B0A0F /* TCAbstractList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAbstractList.m; sourceTree = "<group>"; };
 		201AE1E0268EB892007B0A0F /* TCSingleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCSingleLinkedList.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 			children = (
 				AF55276B26992FB20021FE29 /* TCQueue.h */,
 				AF55276A26992FB10021FE29 /* TCQueue.m */,
+				2012AED7269BCFF900D464A8 /* TCDeque.h */,
+				2012AED8269BCFF900D464A8 /* TCDeque.m */,
 				2007567E2697D7FF002F22E7 /* TCStack.h */,
 				2007567F2697D7FF002F22E7 /* TCStack.m */,
 				2034A0D126929D5C0058CB6E /* TCLinkedList.h */,
@@ -213,6 +218,7 @@
 				201AE1DF268EB75A007B0A0F /* TCAbstractList.m in Sources */,
 				2034A0D326929D5C0058CB6E /* TCLinkedList.m in Sources */,
 				2025B541267C32CD00B3AE72 /* AppDelegate.m in Sources */,
+				2012AED9269BCFF900D464A8 /* TCDeque.m in Sources */,
 				2025B552267C32D000B3AE72 /* main.m in Sources */,
 				206263222696F59C0057B8E5 /* TCCircleLinkedList.m in Sources */,
 				2025B544267C32CD00B3AE72 /* SceneDelegate.m in Sources */,
