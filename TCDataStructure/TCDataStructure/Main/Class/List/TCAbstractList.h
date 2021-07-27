@@ -83,6 +83,16 @@ extern int const  ELEMENT_NOT_FOUND;
  */
 - (int)indexOf:(TCElement)element;
 
+#pragma mark - Protected Methods
+/// 检测index是否合法
+- (BOOL)checkIndex:(int)index;
+/// 检测添加时index是否合法
+- (BOOL)checkIndexForAdd:(int)index;
+/// tip: index越界
+- (void)outOfBounds:(int)index;
+/// 检测元素不为nil
+- (BOOL)checkElementNotNull:(TCElement)element;
+
 @end
 
 NS_ASSUME_NONNULL_END
