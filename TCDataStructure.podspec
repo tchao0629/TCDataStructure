@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TCDataStructure"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.4"
   spec.summary      = "数据结构"
 
   # This description is used to generate tags and improve search results.
