@@ -20,6 +20,8 @@
 		2025B552267C32D000B3AE72 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2025B551267C32D000B3AE72 /* main.m */; };
 		2034A0D326929D5C0058CB6E /* TCLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2034A0D226929D5C0058CB6E /* TCLinkedList.m */; };
 		2034A0E32693E50F0058CB6E /* TCSingleCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 2034A0E12693E50F0058CB6E /* TCSingleCircleLinkedList.m */; };
+		20416FEA26C760A80063AEC3 /* TCBinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 20416FE626C760A80063AEC3 /* TCBinarySearchTree.m */; };
+		20416FEB26C760A80063AEC3 /* TCBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 20416FE926C760A80063AEC3 /* TCBinaryTree.m */; };
 		206263222696F59C0057B8E5 /* TCCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 206263212696F59C0057B8E5 /* TCCircleLinkedList.m */; };
 		AF55276C26992FB20021FE29 /* TCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AF55276A26992FB10021FE29 /* TCQueue.m */; };
 /* End PBXBuildFile section */
@@ -49,6 +51,11 @@
 		2034A0D226929D5C0058CB6E /* TCLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCLinkedList.m; sourceTree = "<group>"; };
 		2034A0E12693E50F0058CB6E /* TCSingleCircleLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCSingleCircleLinkedList.m; sourceTree = "<group>"; };
 		2034A0E22693E50F0058CB6E /* TCSingleCircleLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCSingleCircleLinkedList.h; sourceTree = "<group>"; };
+		20416FE626C760A80063AEC3 /* TCBinarySearchTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBinarySearchTree.m; sourceTree = "<group>"; };
+		20416FE726C760A80063AEC3 /* TCBinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBinarySearchTree.h; sourceTree = "<group>"; };
+		20416FE826C760A80063AEC3 /* TCBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCBinaryTree.h; sourceTree = "<group>"; };
+		20416FE926C760A80063AEC3 /* TCBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCBinaryTree.m; sourceTree = "<group>"; };
+		20416FED26C761470063AEC3 /* TCComparable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCComparable.h; sourceTree = "<group>"; };
 		206263202696F59C0057B8E5 /* TCCircleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCircleLinkedList.h; sourceTree = "<group>"; };
 		206263212696F59C0057B8E5 /* TCCircleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCircleLinkedList.m; sourceTree = "<group>"; };
 		AF55276A26992FB10021FE29 /* TCQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCQueue.m; sourceTree = "<group>"; };
@@ -127,6 +134,7 @@
 		2025B558267C335100B3AE72 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				20416FEC26C761250063AEC3 /* Common */,
 				2025B559267C335100B3AE72 /* Class */,
 			);
 			path = Main;
@@ -135,9 +143,29 @@
 		2025B559267C335100B3AE72 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				20416FE526C760720063AEC3 /* Tree */,
 				201AE1DC268EB730007B0A0F /* List */,
 			);
 			path = Class;
+			sourceTree = "<group>";
+		};
+		20416FE526C760720063AEC3 /* Tree */ = {
+			isa = PBXGroup;
+			children = (
+				20416FE726C760A80063AEC3 /* TCBinarySearchTree.h */,
+				20416FE626C760A80063AEC3 /* TCBinarySearchTree.m */,
+				20416FE826C760A80063AEC3 /* TCBinaryTree.h */,
+				20416FE926C760A80063AEC3 /* TCBinaryTree.m */,
+			);
+			path = Tree;
+			sourceTree = "<group>";
+		};
+		20416FEC26C761250063AEC3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				20416FED26C761470063AEC3 /* TCComparable.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -218,7 +246,9 @@
 				201AE1DF268EB75A007B0A0F /* TCAbstractList.m in Sources */,
 				2034A0D326929D5C0058CB6E /* TCLinkedList.m in Sources */,
 				2025B541267C32CD00B3AE72 /* AppDelegate.m in Sources */,
+				20416FEA26C760A80063AEC3 /* TCBinarySearchTree.m in Sources */,
 				2012AED9269BCFF900D464A8 /* TCDeque.m in Sources */,
+				20416FEB26C760A80063AEC3 /* TCBinaryTree.m in Sources */,
 				2025B552267C32D000B3AE72 /* main.m in Sources */,
 				206263222696F59C0057B8E5 /* TCCircleLinkedList.m in Sources */,
 				2025B544267C32CD00B3AE72 /* SceneDelegate.m in Sources */,
