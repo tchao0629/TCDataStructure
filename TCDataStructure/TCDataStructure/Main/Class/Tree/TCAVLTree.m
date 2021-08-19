@@ -109,9 +109,9 @@
 
 - (void)afterRotate:(TCAVLTreeNode *)grand parent:(TCAVLTreeNode *)parent child:(TCAVLTreeNode *)child {
     /// 让parent节点成为子树的根节点
-    if (grand.parent.left == grand) {
+    if ([grand isLeftChild]) {
         grand.parent.left = parent;
-    } else if (grand.parent.right == grand) {
+    } else if ([grand isRightChild]) {
         grand.parent.right = parent;
     } else {
         _root = parent;
@@ -124,7 +124,7 @@
         child.parent = grand;
     }
     
-    /// 更新节点高度 [grand parent]
+    /// 更新节点高度 [grand parent] [先更新高度小的grand 再更新高度大的parent]
     [grand updateHeight];
     [parent updateHeight];
 }
