@@ -23,6 +23,7 @@
 		20416FEA26C760A80063AEC3 /* TCBinarySearchTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 20416FE626C760A80063AEC3 /* TCBinarySearchTree.m */; };
 		20416FEB26C760A80063AEC3 /* TCBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 20416FE926C760A80063AEC3 /* TCBinaryTree.m */; };
 		206263222696F59C0057B8E5 /* TCCircleLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 206263212696F59C0057B8E5 /* TCCircleLinkedList.m */; };
+		20B868C826CCFF41000025DE /* TCAVLTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B868C726CCFF41000025DE /* TCAVLTree.m */; };
 		AF55276C26992FB20021FE29 /* TCQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = AF55276A26992FB10021FE29 /* TCQueue.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		20416FED26C761470063AEC3 /* TCComparable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCComparable.h; sourceTree = "<group>"; };
 		206263202696F59C0057B8E5 /* TCCircleLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCCircleLinkedList.h; sourceTree = "<group>"; };
 		206263212696F59C0057B8E5 /* TCCircleLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCCircleLinkedList.m; sourceTree = "<group>"; };
+		20B868C626CCFF41000025DE /* TCAVLTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TCAVLTree.h; sourceTree = "<group>"; };
+		20B868C726CCFF41000025DE /* TCAVLTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCAVLTree.m; sourceTree = "<group>"; };
 		AF55276A26992FB10021FE29 /* TCQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCQueue.m; sourceTree = "<group>"; };
 		AF55276B26992FB20021FE29 /* TCQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCQueue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +159,8 @@
 				20416FE626C760A80063AEC3 /* TCBinarySearchTree.m */,
 				20416FE826C760A80063AEC3 /* TCBinaryTree.h */,
 				20416FE926C760A80063AEC3 /* TCBinaryTree.m */,
+				20B868C626CCFF41000025DE /* TCAVLTree.h */,
+				20B868C726CCFF41000025DE /* TCAVLTree.m */,
 			);
 			path = Tree;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20B868C826CCFF41000025DE /* TCAVLTree.m in Sources */,
 				2025B547267C32CD00B3AE72 /* ViewController.m in Sources */,
 				200756802697D7FF002F22E7 /* TCStack.m in Sources */,
 				AF55276C26992FB20021FE29 /* TCQueue.m in Sources */,

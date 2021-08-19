@@ -15,8 +15,15 @@
     if (self = [super init]) {
         _element = element;
         _parent = parent;
+        
+        /// 初始化高度为1
+        _height = 1;
     }
     return self;
+}
+
+- (NSInteger)height {
+    return _height;
 }
 
 - (BOOL)isLeaf {
@@ -25,6 +32,18 @@
 
 - (BOOL)hasTwoChild {
     return _left && _right;
+}
+
+- (BOOL)isLeftChild {
+    return _parent && _parent.left == self;
+}
+
+- (BOOL)isRightChild {
+    return _parent && _parent.right == self;
+}
+
+- (void)updateHeight {
+    _height = MAX(_left.height, _right.height) + 1;
 }
 
 @end
@@ -70,20 +89,6 @@
 - (void)clear {
     _size = 0;
     _root = nil;
-}
-
-- (BOOL)contains:(id)element {
-    /// 子类去重写
-    return NO;
-}
-
-- (void)add:(id)element {
-    /// 子类去重写
-}
-
-- (id)remove:(id)element {
-    /// 子类去重写
-    return nil;
 }
 
 - (BOOL)isComplete {

@@ -33,14 +33,19 @@
     return [self nodeForElement:element] != nil;
 }
 
+- (__kindof TCBinaryTreeNode *)createNodeWithElement:(id)element andParant:(__kindof TCBinaryTreeNode *)parent {
+    return [[TCBinaryTreeNode alloc] initWithElement:element andParent:parent];
+}
+
 - (void)add:(id)element {
     if (![self checkElementNotNull:element]) {
         return;
     }
     
     if (!_root) {
-        _root = [[TCBinaryTreeNode alloc] initWithElement:element andParent:nil];
+        _root = [self createNodeWithElement:element andParant:nil];
         _size++;
+        [self afterAdd:_root];
         return;
     }
     
@@ -70,19 +75,27 @@
         }
     } while (node);
     
-    TCBinaryTreeNode *newNode = [[TCBinaryTreeNode alloc] initWithElement:element andParent:parent];
+    TCBinaryTreeNode *newNode = [self createNodeWithElement:element andParant:parent];
     if (cmp > 0) {
         parent.right = newNode;
     } else {
         parent.left = newNode;
     }
     _size++;
+    [self afterAdd:newNode];
 }
-
+- (void)afterAdd:(__kindof TCBinaryTreeNode *)node {
+    /// 子类去重写
+}
+- (void)afterRemove:(__kindof TCBinaryTreeNode *)node {
+    /// 子类去重写
+}
 - (id)remove:(id)element {
     TCBinaryTreeNode *node = [self nodeForElement:element];
     if (node) {
         [self removeNode:node];
+        
+        [self afterRemove:node];
         return node.element;
     }
     return node;

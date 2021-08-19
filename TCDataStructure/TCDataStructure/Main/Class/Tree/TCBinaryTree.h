@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
     __kindof TCBinaryTreeNode *_left;
     __kindof TCBinaryTreeNode *_right;
     __kindof TCBinaryTreeNode *_parent;
+    
+    NSInteger _height;
 }
 
 @property (nonatomic, strong) TCElement element;
@@ -23,12 +25,20 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, nullable) __kindof TCBinaryTreeNode *right;
 @property (nonatomic, strong, nullable) __kindof TCBinaryTreeNode *parent;
 
+/// 节点的高度
+@property (nonatomic, assign, readonly) NSInteger height;
+
 - (instancetype)initWithElement:(TCElement)element andParent:(nullable __kindof TCBinaryTreeNode<TCElement> *)parent;
 
 /// 是否为叶子节点
 - (BOOL)isLeaf;
 /// 是否有两个子节点
 - (BOOL)hasTwoChild;
+
+- (BOOL)isLeftChild;
+- (BOOL)isRightChild;
+
+- (void)updateHeight;
 
 @end
 
@@ -44,11 +54,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)isEmpty;
 - (void)clear;
-
-- (BOOL)contains:(TCElement)element;
-
-- (void)add:(TCElement)element;
-- (TCElement)remove:(TCElement)element;
 
 /// 是否为完全二叉树
 - (BOOL)isComplete;
